@@ -1,0 +1,20 @@
+.header{
+    text-align: center;
+}
+.header__img{
+    height: 80px;
+}
+.nav__list{
+    background-color: #000;
+}
+.nav__link{
+    text-decoration: none;
+    display: inline-block;
+    padding:1rem 1.5rem;
+    color:#fff;
+    font-size: 1.3rem;
+}
+.nav__link:hover{
+    background-color: #b9adad;
+    color: #000;
+}

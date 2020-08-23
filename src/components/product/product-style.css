@@ -1,0 +1,13 @@
+.product{
+    display: flex;
+    margin-top: 1rem ;
+}
+.product__content{
+   margin:0 1rem;
+   border-bottom: 1px solid lightgrey;
+   
+}
+.product__heading{
+    color: blue;
+    font-weight: 400;
+}
