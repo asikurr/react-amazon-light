@@ -11,3 +11,15 @@
     color: blue;
     font-weight: 400;
 }
+.product__btn{
+    background-color: goldenrod;
+    border: 1px solid #322c2c;
+    border-radius: 5px;
+    width: 10rem;
+    margin-bottom: 1rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+.product__btn:focus{
+    outline: none;
+}
