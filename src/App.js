@@ -11,12 +11,14 @@ import {
 import Review from './components/Review/Review';
 import Inventory from './components/Inventory/Inventory';
 import NotFound from './components/notfound/NotFound';
+import ProductDetails from './components/productDetails/ProductDetails';
 
 function App() {
   return (
     <div >
-      <Header />
+      
       <Router>
+      <Header />
         <Switch>
           <Route path="/shop">
             <Shop />
@@ -30,6 +32,11 @@ function App() {
           <Route exact path="/">
             <Shop />
           </Route>
+
+          <Route exact path="/product/:productkey">
+            <ProductDetails/>
+          </Route>
+
           <Route path="*">
             <NotFound />
           </Route>
