@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 
 const ReviewItems = (props) => {
     // console.log(props)
-    const { name, quantity, price, img } = props.product;
+    const { name, quantity, price, img ,key} = props.product;
     return (
         <Fragment>
 
@@ -15,7 +15,9 @@ const ReviewItems = (props) => {
                     <h3 className="product__heading">{name}</h3>
                     <p>Price : ${price}</p>
                     <p>Quantity:  {quantity} </p>
-                    <button className="product__btn">Remove</button>
+                    <button 
+                    onClick={() => props.removeCartItem(key)}
+                    className="product__btn">Remove</button>
                 </div>
             </div>
 
